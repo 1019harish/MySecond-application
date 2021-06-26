@@ -12,7 +12,7 @@ export default function ViewProduct(){
         axios.get('/product/getproduct')
         .then(res=>{
             let productObj=res.data
-            console.log("product is :",productObj)
+           // console.log("product is :",productObj)
             setProduct([...productObj.message])
         })
     },[])
@@ -23,7 +23,7 @@ export default function ViewProduct(){
         let username=localStorage.getItem("username")
 
         let newObj={username,productObj}
-        console.log(newObj)
+        //console.log(newObj)
 
         axios.post("/user/addtocart",newObj)
         .then(res=>{
@@ -33,7 +33,7 @@ export default function ViewProduct(){
             history.push("/UserCart")
         })
         .catch(err=>{
-            console.log("Error in adding to cart",err)
+           // console.log("Error in adding to cart",err)
             alert("Something went wrong")
         })
     }
@@ -41,7 +41,7 @@ export default function ViewProduct(){
     //this for button conditional rendering forn user and admin (if the card is in admin it should not show the button)
     let usertype=localStorage.getItem("username")
 
-    console.log(product)
+    //console.log(product)
 
     return(
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">

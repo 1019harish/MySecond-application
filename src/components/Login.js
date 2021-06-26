@@ -11,7 +11,7 @@ export default function Login(props){
 
     const onFormSubmit=(credentials)=>{
 
-        console.log(credentials)
+        //console.log(credentials)
 
         axios.post(`${credentials.usertype}/login`,credentials)
         .then(res=>{

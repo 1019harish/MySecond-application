@@ -1,7 +1,7 @@
   import {Card , Button} from 'react-bootstrap'
   export default function Items(props){
     let productObj=props.productObj;
-    console.log("product obj is : " , productObj)
+    //console.log("product obj is : " , productObj)
     return(
            <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={productObj.profileImage} className = "w-100 h-25" />

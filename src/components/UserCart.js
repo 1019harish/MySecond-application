@@ -19,7 +19,7 @@ function UserCart(){
             setCartObj(res.data.message)
         })
         .catch(err=>{
-            console.log("Error in reading cart",err)
+          //  console.log("Error in reading cart",err)
             alert("Something went wrong in getting cart")
         })
     },[])

@@ -18,7 +18,7 @@ export default function UserProfile(){
         //productObj.username=username;
         let newObj={username,productObj}
 
-        console.log("Product added by user is",newObj)
+       // console.log("Product added by user is",newObj)
 
         //make post req
         axios.post("/user/addtocart",newObj)
@@ -27,7 +27,7 @@ export default function UserProfile(){
             alert(responseObj.message)
         })
         .catch(err=>{
-            console.log("Error in adding to cart",err)
+           // console.log("Error in adding to cart",err)
             alert("Something went wrong")
         })
     }
