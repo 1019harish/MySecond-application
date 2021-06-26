@@ -79,5 +79,5 @@ app.use((err,req,res,next)=>{
 //app.use("/products",productApi)
 
 //assign port
-const port=process.env.PORT || 5000;
-app.listen(port,()=>console.log(`server running on port ${port} `))
+const PORT=process.env.PORT || 5000;
+app.listen(PORT,()=>console.log(`server running on port ${PORT} `))
